@@ -1,0 +1,12 @@
+<h2> its out task form!! </h2>
+
+<form method="POST" autocomplete="off">
+
+  {% csrf_token %}
+
+  {{form.as_p}}
+
+ <input type="submit" value="Submit"/>
+
+
+</form>

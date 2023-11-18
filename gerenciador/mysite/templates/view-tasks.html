@@ -1,0 +1,19 @@
+<h1>seus tasks </h1>
+{% for task in tasks %}
+
+<br><br>
+
+
+{{task.title}}
+
+<br><br>
+{{task.content}}
+
+<br><br>
+
+<a href ="{% url 'update-task' task.id  %}"> Update task </a>
+
+<br><br>
+
+
+{% endfor %}
